@@ -1,6 +1,6 @@
 {
   "name": "remark-external-links",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "remark plugin to automatically add target and rel attributes to external links",
   "license": "MIT",
   "keywords": [
@@ -38,23 +38,23 @@
   "dependencies": {
     "extend": "^3.0.0",
     "is-absolute-url": "^3.0.0",
-    "mdast-util-definitions": "^3.0.0",
+    "mdast-util-definitions": "^4.0.0",
     "space-separated-tokens": "^1.0.0",
     "unist-util-visit": "^2.0.0"
   },
   "devDependencies": {
-    "dtslint": "^3.0.0",
+    "dtslint": "^4.0.0",
     "nyc": "^15.0.0",
     "prettier": "^2.0.0",
-    "remark": "^12.0.0",
-    "remark-cli": "^8.0.0",
-    "remark-html": "^12.0.0",
-    "remark-preset-wooorm": "^7.0.0",
+    "remark": "^13.0.0",
+    "remark-cli": "^9.0.0",
+    "remark-html": "^13.0.0",
+    "remark-preset-wooorm": "^8.0.0",
     "tape": "^5.0.0",
     "xo": "^0.33.0"
   },
   "scripts": {
-    "format": "remark . -qfo && prettier . --write && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test",
     "test-coverage": "nyc --reporter lcov tape test.js",
     "test-types": "dtslint types",
